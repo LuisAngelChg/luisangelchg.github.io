@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>FLORES</title>
+    <style>
+        body {
+            position: relative; /* Permite que las imágenes se posicionen en relación al body */
+            margin: 0; /* Elimina márgenes del body */
+            height: 100vh; /* Altura del viewport */
+        }
+        .description {
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            margin: 20px; /* Espacio alrededor del texto */
+        }
+        .image {
+            position: absolute;
+            width: 100px; /* Ajusta el tamaño según necesites */
+        }
+        .img1 { top: 0; left: 0; } /* Esquina superior izquierda */
+        .img2 { top: 0; right: 0; } /* Esquina superior derecha */
+        .img3 { bottom: 0; left: 0; } /* Esquina inferior izquierda */
+        .img4 { bottom: 0; right: 0; } /* Esquina inferior derecha */
+    </style>
+</head>
+<body>
+     <!-- Canción de fondo, sin controles visibles -->
+     <audio autoplay loop>
+        <source src="img/Floricienta.mp3" type="audio/mpeg">
+    </audio>
+    <div class="greetings">
+        <span>H</span>
+        <span>O</span>
+        <span>L</span>
+        <span>A</span>
+        <span></span>
+        <span>M</span>
+        <span>I</span>
+        <span></span>
+        <span>A</span>
+        <span>M</span>
+        <span>O</span>
+        <span>R</span>
+    </div>
+
+    <div class="greetings">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="description">
+        <span>Tengo un regalo especial para ti, mi Leslie, mi esposita!!</span>
+    </div>
+
+    <div class="description">
+        <img src="img/L1.jpg" class="image img1" alt="Imagen 1">
+        <img src="img/L2.jpg" class="image img2" alt="Imagen 2">
+        <img src="img/L3.jpg" class="image img3" alt="Imagen 3">
+        <img src="img/L4.jpg" class="image img4" alt="Imagen 4">
+        <span>Quiero que sepas lo orgulloso que estoy de ti. Cada día me sorprendes 
+            con tu fuerza, tu dedicación y tu bondad. Te amo infinitamente
+        </span>
+    </div>
+    
+
+    <div class="button">
+        <button>
+            <a href="FLORES.html">Has clic mi Leslie</a>
+        </button>
+    </div>
+
+    <script>
+        // Intentar reproducir el audio al cargar la página
+        document.querySelector('audio').play().catch(error => {
+            console.log('Error al intentar reproducir el audio:', error);
+        });
+    </script>
+</body>
+</html>
